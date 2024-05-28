@@ -1,12 +1,10 @@
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import React from "react";
 import MainLayout from "./Layouts/MainLayout/MainLayout";
 import HomePage from "./Components/Home/HomePage";
 
 
 export const RootRoutes = () => {
-    const navigate = useNavigate();
-
     return (
         <Routes>
             <Route
