@@ -4,7 +4,6 @@ width: 100%;
 }
 .sidebar{
 width: 20px;
-background-color: red;
 }
 .main-pages{
 width: 100%;
@@ -14,5 +13,5 @@ background: blue;
 }
 .page{
 min-height: 100vh;
-background-color: yellow;
+background-color: #212121;;
 }

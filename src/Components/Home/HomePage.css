@@ -1,0 +1,21 @@
+.homepage {
+    padding: 24px 8px;
+}
+
+.homepage_container {
+    gap: 24px;
+}
+
+.my_name {
+    text-align: center;
+}
+
+.name_text {
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.name_animation {
+    color: #FFFFFF;
+    font-size: 128px;
+}
