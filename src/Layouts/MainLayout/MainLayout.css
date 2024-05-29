@@ -1,0 +1,18 @@
+.main{
+display: flex;
+width: 100%;
+}
+.sidebar{
+width: 20px;
+background-color: red;
+}
+.main-pages{
+width: 100%;
+}
+.topbar{
+background: blue;
+}
+.page{
+min-height: 100vh;
+background-color: yellow;
+}
