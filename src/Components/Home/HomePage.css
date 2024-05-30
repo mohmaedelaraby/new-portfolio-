@@ -19,6 +19,9 @@
 
 .name_animation {
     color: #FFFFFF;
-    font-size: 52px;
+    font-size: 45px;
 
+}
+.name_animation_text{
+    color: #e6db74;
 }
