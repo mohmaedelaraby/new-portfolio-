@@ -8,14 +8,17 @@
 
 .my_name {
     text-align: center;
+    padding: 24px;
 }
 
 .name_text {
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 14px;
+    margin-bottom: 32px;
 }
 
 .name_animation {
     color: #FFFFFF;
-    font-size: 128px;
+    font-size: 52px;
+
 }

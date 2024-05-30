@@ -1,10 +1,17 @@
-import { Route, Routes } from "react-router-dom";
-import React from "react";
+import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
 import MainLayout from "./Layouts/MainLayout/MainLayout";
 import HomePage from "./Components/Home/HomePage";
 
 
 export const RootRoutes = () => {
+    const nav = useNavigate()
+    const loc = useLocation()
+    useEffect(()=>{
+        if(loc.pathname.length<2){
+            nav('/home')
+        }
+    },[])
     return (
         <Routes>
             <Route

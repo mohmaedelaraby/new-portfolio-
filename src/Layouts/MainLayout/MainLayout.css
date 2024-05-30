@@ -3,7 +3,7 @@ display: flex;
 width: 100%;
 }
 .sidebar{
-width: 20px;
+    min-height: 100vh;
 }
 .main-pages{
 width: 100%;
