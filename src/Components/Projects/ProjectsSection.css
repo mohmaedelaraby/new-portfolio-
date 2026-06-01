@@ -31,6 +31,7 @@
 .projects_controls {
   display: flex;
   gap: 10px;
+  margin-left: auto;
 }
 
 .projects_nav_button {
