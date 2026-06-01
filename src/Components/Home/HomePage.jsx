@@ -87,6 +87,13 @@ function HomePage() {
                 initiatives, improving operational efficiency, and collaborating
                 across cross-functional engineering teams.
               </p>
+              <a
+                className="resume_button"
+                href="/Mohamed_Elaraby_Resume.pdf"
+                download
+              >
+                Download Resume
+              </a>
             </div>
           </div>
         </section>
