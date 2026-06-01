@@ -11,7 +11,7 @@ export const RootRoutes = () => {
         if(loc.pathname.length<2){
             nav('/home')
         }
-    },[])
+    })
     return (
         <Routes>
             <Route
