@@ -6,6 +6,7 @@ const experiences = [
   {
     role: "Software Front-End Engineer",
     company: "Breadfast",
+    companyLogo: "/breadfast.webp",
     companySite: "https://breadfast.com",
     companyLinkedIn: "https://www.linkedin.com/company/breadfast/",
     period: "04/2025 - Present",
@@ -23,6 +24,7 @@ const experiences = [
   {
     role: "Front-End Engineer",
     company: "IOTBlue",
+    companyLogo: "/iot.jpg",
     companySite: "https://iotblue.com",
     companyLinkedIn: "https://www.linkedin.com/company/iotblue/",
     period: "11/2024 - 04/2025",
@@ -40,6 +42,7 @@ const experiences = [
     companySite: "https://www.gameball.co",
     companyLinkedIn: "https://www.linkedin.com/company/gameball/",
     company: "Gameball",
+    companyLogo: "/gamball.png",
     period: "12/2022 - 12/2024",
     location: "Cairo, Egypt",
     techStack: "Angular, React.js, Vanilla JavaScript, Webpack, TypeScript, Node.js",
@@ -57,6 +60,7 @@ const experiences = [
     //companySite: "https://turndigitalagency.com",
     companyLinkedIn: "https://www.linkedin.com/company/turndigital/posts/?feedView=all/",
     company: "Turn Digital",
+    companyLogo: "/turn didgtal.jpg",
     period: "03/2022 - 12/2022",
     location: "Cairo, Egypt",
     techStack: "Vue.js, React.js",
@@ -70,6 +74,7 @@ const experiences = [
     companySite: "https://igrcsquare.com",
     companyLinkedIn: "https://www.linkedin.com/company/igrcsquare/",
     company: "IGRC Square",
+    companyLogo: "/igrc.jpg",
     period: "Internship Experience",
     location: "Cairo, Egypt",
     techStack: "Node.js",
@@ -117,7 +122,18 @@ function ExperienceTimeline() {
                 >
                   <span className="experience_heading">
                     <h3 className="experience_role">
-                      {item.role}, <span>{item.company}</span>
+                      {item.role},
+                      <span className="company_name_with_logo">
+                        {item.companyLogo && (
+                          <img
+                            className="company_logo"
+                            src={item.companyLogo}
+                            alt={`${item.company} logo`}
+                            loading="lazy"
+                          />
+                        )}
+                        <span>{item.company}</span>
+                      </span>
                       <span className="company_icon_links">
         {
                         item.companySite && (
