@@ -1,9 +1,133 @@
+:root {
+  /* Backgrounds */
+  --bg-page: #212121;
+  --bg-topbar: rgba(24, 24, 24, 0.92);
+  --bg-sidebar: #181818;
+  --bg-section: #1a1a1a;
+  --bg-card: #181818;
+  --bg-card-end: #131313;
+  --bg-surface: #151515;
+  --bg-control: #141414;
+  --bg-control-alt: #121212;
+  --bg-control-hover: #1c1c1c;
+  --bg-control-hover-alt: #1b1b1b;
+  --bg-link: #161616;
+  --bg-logo: #111111;
+  --bg-img-start: #202020;
+  --bg-modal: #1b1b1b;
+  --bg-tag-hover: #191919;
+  --bg-toggle-hover: #171717;
+  --bg-company-logo: #101010;
+
+  /* Borders */
+  --border-subtle: #2b2b2b;
+  --border-default: #2f2f2f;
+  --border-muted: #3a3a3a;
+  --border-sidebar: #4e4e4e;
+  --border-divider: #343434;
+
+  /* Text */
+  --text-strong: #ffffff;
+  --text-primary: #f6f6f6;
+  --text-body: #f5f5f5;
+  --text-secondary: #d7d7d7;
+  --text-meta: #c3c3c3;
+  --text-muted: #a8a8a8;
+  --text-dim: #8c8c8c;
+  --text-sidebar: #4e4e4e;
+  --text-tag: #d6d6d6;
+  --text-stack: #cfcfcf;
+  --text-subtext: #f0f0f0;
+
+  /* Accent */
+  --accent: #e6db74;
+  --accent-hover: #fff0a6;
+  --accent-tag-hover: #fff3b0;
+  --on-accent: #111111;
+  --accent-subtle: rgba(230, 219, 116, 0.14);
+  --accent-glow: rgba(230, 219, 116, 0.2);
+  --accent-glow-sm: rgba(230, 219, 116, 0.08);
+  --accent-image: rgba(230, 219, 116, 0.18);
+  --accent-marker: rgba(230, 219, 116, 0.15);
+
+  /* Misc */
+  --dot-inactive: #4a4a4a;
+  --timeline-end: #3a3a3a;
+  --overlay: rgba(10, 10, 10, 0.72);
+  --shadow-card: rgba(0, 0, 0, 0.28);
+  --shadow-modal: rgba(0, 0, 0, 0.45);
+  --shadow-tag: rgba(0, 0, 0, 0.18);
+  --shadow-inset: rgba(255, 255, 255, 0.03);
+}
+
+[data-theme="light"] {
+  /* Backgrounds */
+  --bg-page: #f0f2f5;
+  --bg-topbar: rgba(255, 255, 255, 0.92);
+  --bg-sidebar: #ffffff;
+  --bg-section: #ffffff;
+  --bg-card: #f8f8f8;
+  --bg-card-end: #f0f0f0;
+  --bg-surface: #fafafa;
+  --bg-control: #efefef;
+  --bg-control-alt: #f5f5f5;
+  --bg-control-hover: #e4e4e4;
+  --bg-control-hover-alt: #ececec;
+  --bg-link: #f5f5f5;
+  --bg-logo: #e8e8e8;
+  --bg-img-start: #e8e8e8;
+  --bg-modal: #ffffff;
+  --bg-tag-hover: #eeeeee;
+  --bg-toggle-hover: #f2f2f2;
+  --bg-company-logo: #efefef;
+
+  /* Borders */
+  --border-subtle: #e0e0e0;
+  --border-default: #d0d0d0;
+  --border-muted: #c4c4c4;
+  --border-sidebar: #d8d8d8;
+  --border-divider: #d8d8d8;
+
+  /* Text */
+  --text-strong: #111111;
+  --text-primary: #1a1a1a;
+  --text-body: #2a2a2a;
+  --text-secondary: #555555;
+  --text-meta: #666666;
+  --text-muted: #888888;
+  --text-dim: #999999;
+  --text-sidebar: #b8b8b8;
+  --text-tag: #4a4a4a;
+  --text-stack: #5a5a5a;
+  --text-subtext: #3a3a3a;
+
+  /* Accent */
+  --accent: #b5940a;
+  --accent-hover: #8f7408;
+  --accent-tag-hover: #7a6306;
+  --on-accent: #ffffff;
+  --accent-subtle: rgba(181, 148, 10, 0.1);
+  --accent-glow: rgba(181, 148, 10, 0.15);
+  --accent-glow-sm: rgba(181, 148, 10, 0.06);
+  --accent-image: rgba(181, 148, 10, 0.12);
+  --accent-marker: rgba(181, 148, 10, 0.12);
+
+  /* Misc */
+  --dot-inactive: #c8c8c8;
+  --timeline-end: #c4c4c4;
+  --overlay: rgba(0, 0, 0, 0.5);
+  --shadow-card: rgba(0, 0, 0, 0.1);
+  --shadow-modal: rgba(0, 0, 0, 0.2);
+  --shadow-tag: rgba(0, 0, 0, 0.08);
+  --shadow-inset: rgba(0, 0, 0, 0.04);
+}
+
 html,
 body,
 #root {
   margin: 0;
   padding: 0;
-  background: #212121;
+  background: var(--bg-page);
 }
 
 body {
@@ -11,5 +135,5 @@ body {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
-

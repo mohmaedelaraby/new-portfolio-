@@ -1,7 +1,11 @@
 import React from "react";
 import "./Topbar.css";
+import { Sun, Moon } from "lucide-react";
+import { useTheme } from "../../context/ThemeContext";
 
 function Topbar({ items = [] }) {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <header className="topbar_component">
       <div className="topbar_brand">
@@ -23,6 +27,19 @@ function Topbar({ items = [] }) {
           </a>
         ))}
       </nav>
+
+      <button
+        type="button"
+        className="topbar_theme_toggle"
+        onClick={toggleTheme}
+        aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
+      >
+        {theme === "dark" ? (
+          <Sun size={16} strokeWidth={2.2} />
+        ) : (
+          <Moon size={16} strokeWidth={2.2} />
+        )}
+      </button>
     </header>
   );
 }

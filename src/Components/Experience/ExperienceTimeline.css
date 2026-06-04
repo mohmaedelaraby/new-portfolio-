@@ -1,15 +1,15 @@
 .experience_section {
   margin: 36px auto;
   width: 85%;
-  background: #1a1a1a;
-  border: 1px solid #2f2f2f;
-  border-left: 4px solid #e6db74;
+  background: var(--bg-section);
+  border: 1px solid var(--border-default);
+  border-left: 4px solid var(--accent);
   border-radius: 10px;
   padding: 24px;
 }
 
 .experience_title {
-  color: #e6db74;
+  color: var(--accent);
   font-size: 24px;
   letter-spacing: 0.5px;
   margin-bottom: 20px;
@@ -29,7 +29,7 @@
   top: 6px;
   bottom: 6px;
   width: 2px;
-  background: linear-gradient(180deg, #e6db74 0%, #3a3a3a 100%);
+  background: linear-gradient(180deg, var(--accent) 0%, var(--timeline-end) 100%);
 }
 
 .experience_step {
@@ -53,14 +53,14 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #e6db74;
-  box-shadow: 0 0 0 3px rgba(230, 219, 116, 0.15);
+  background: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-marker);
 }
 
 .experience_card {
   width: 100%;
-  background: #151515;
-  border: 1px solid #2b2b2b;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
   border-radius: 8px;
 }
 
@@ -75,18 +75,18 @@
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  border: 1px solid #2b2b2b;
+  border: 1px solid var(--border-subtle);
   border-radius: 8px;
   padding: 18px;
-  background: #151515;
+  background: var(--bg-surface);
   text-align: left;
   cursor: pointer;
   transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
 .experience_toggle:hover {
-  border-color: #3a3a3a;
-  background: #171717;
+  border-color: var(--border-muted);
+  background: var(--bg-toggle-hover);
 }
 
 .experience_heading {
@@ -108,10 +108,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #2f2f2f;
+  border: 1px solid var(--border-default);
   border-radius: 50%;
-  background: #121212;
-  color: #e6db74;
+  background: var(--bg-control-alt);
+  color: var(--accent);
   text-decoration: none;
   font-size: 11px;
   line-height: 1;
@@ -120,8 +120,8 @@
 }
 
 .company_icon_link:hover {
-  border-color: #e6db74;
-  background: #1b1b1b;
+  border-color: var(--accent);
+  background: var(--bg-control-hover-alt);
 }
 
 .company_icon_link::after {
@@ -130,8 +130,8 @@
   left: 50%;
   bottom: calc(100% + 8px);
   white-space: nowrap;
-  color: #111111;
-  background: #e6db74;
+  color: var(--on-accent);
+  background: var(--accent);
   border-radius: 6px;
   padding: 6px 8px;
   font-size: 10px;
@@ -149,7 +149,7 @@
 }
 
 .experience_chevron {
-  color: #e6db74;
+  color: var(--accent);
   font-size: 24px;
   line-height: 1;
   min-width: 16px;
@@ -168,7 +168,7 @@
 
 .experience_role {
   margin: 0;
-  color: #e6db74;
+  color: var(--accent);
   font-size: 18px;
   line-height: 1.4;
   display: flex;
@@ -178,7 +178,7 @@
 }
 
 .experience_role span {
-  color: #ffffff;
+  color: var(--text-strong);
 }
 
 .company_name_with_logo {
@@ -193,27 +193,27 @@
   height: 36px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid #3a3a3a;
-  background: #101010;
+  border: 1px solid var(--border-muted);
+  background: var(--bg-company-logo);
 }
 
 .experience_meta {
   margin: 8px 0 8px;
-  color: #c3c3c3;
+  color: var(--text-meta);
   font-size: 14px;
   font-family: "Press Start 2P", system-ui;
 }
 
 .experience_stack {
   margin: 0 0 10px;
-  color: #f0f0f0;
+  color: var(--text-subtext);
   font-size: 14px;
 }
 
 .experience_points {
   margin: 0;
   padding-left: 18px;
-  color: #f5f5f5;
+  color: var(--text-body);
 }
 
 .experience_points li {

@@ -1,26 +1,27 @@
-.main{
-    background: #212121;
+.main {
+    background: var(--bg-page);
 }
-.background{
+
+.background {
     display: flex;
     align-items: stretch;
     min-height: 0;
 }
 
-.sidebar{
+.sidebar {
     width: 45px;
     flex-shrink: 0;
 }
 
-.main-pages{
+.main-pages {
     width: 100%;
     min-width: 0;
     display: flex;
     flex-direction: column;
 }
 
-.page{
-    background-color: #212121;
+.page {
+    background-color: var(--bg-page);
 }
 
 html {
