@@ -199,6 +199,10 @@
     transform: translateY(-2px);
 }
 
+.read_more_btn {
+    display: none;
+}
+
 .contact_section {
     margin: 36px auto 0;
     width: 85%;
@@ -299,9 +303,18 @@
 }
 
 @media (max-width: 768px) {
+    .name_text {
+        font-size: 9px;
+        margin-bottom: 20px;
+    }
+
     .name_animation {
-        font-size: 12px;
-        height: 52px;
+        font-size: 10px;
+        height: 36px;
+    }
+
+    .name_animation_text {
+        font-size: 10px;
     }
 
     .profile_section {
@@ -319,17 +332,41 @@
     }
 
     .profile_title {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .profile_text {
-        font-size: 15px;
+        font-size: 13px;
         line-height: 1.7;
+    }
+
+    .profile_text_clamped {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .read_more_btn {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 8px;
+        margin-bottom: 4px;
+        background: none;
+        border: none;
+        color: var(--accent);
+        font-size: 10px;
+        font-family: "Press Start 2P", system-ui;
+        cursor: pointer;
+        padding: 0;
+        text-decoration: underline;
     }
 
     .resume_button {
         width: 100%;
         max-width: 260px;
+        font-size: 12px;
     }
 
     .contact_section {
@@ -337,12 +374,20 @@
     }
 
     .contact_title {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .contact_intro {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.7;
+    }
+
+    .contact_card_label {
+        font-size: 12px;
+    }
+
+    .contact_card_subLabel {
+        font-size: 12px;
     }
 
     .contact_grid {
@@ -356,5 +401,9 @@
     .mario_dev_icon {
         width: 64px;
         height: 64px;
+    }
+
+    .mario_dev_text {
+        font-size: 12px;
     }
 }

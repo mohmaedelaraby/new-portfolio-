@@ -361,7 +361,7 @@ function ProjectsSection() {
         <div className="projects_group">
           <div className="projects_group_heading">
             <h3 className="projects_subtitle">Personal Fullstack Projects</h3>
-            <p className="projects_subtext">Extracted from your previous portfolio.</p>
+            <p className="projects_subtext">Fullstack projects built from scratch. With a focus on modern web technologies and best practices.</p>
           </div>
           {renderCarousel(
             personalProjects.fullstack,
@@ -375,7 +375,7 @@ function ProjectsSection() {
         <div className="projects_group">
           <div className="projects_group_heading">
             <h3 className="projects_subtitle">Personal Frontend Projects</h3>
-            <p className="projects_subtext">Extracted from your previous portfolio.</p>
+            <p className="projects_subtext">Frontend projects built from scratch. With a focus on modern web technologies and best practices.</p>
           </div>
           {renderCarousel(
             personalProjects.frontend,

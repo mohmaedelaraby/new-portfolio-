@@ -231,11 +231,62 @@
   }
 
   .experience_title {
-    font-size: 20px;
+    font-size: 16px;
+  }
+
+  .experience_toggle {
+    padding: 12px;
+    gap: 8px;
+    align-items: flex-start;
   }
 
   .experience_role {
-    font-size: 16px;
+    font-size: 11px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .company_name_with_logo {
+    margin-left: 0;
+  }
+
+  .company_logo {
+    width: 26px;
+    height: 26px;
+  }
+
+  .company_icon_links {
+    margin-left: 0;
+  }
+
+  .experience_meta {
+    font-size: 10px;
+    margin-top: 4px;
+  }
+
+  .experience_chevron {
+    font-size: 18px;
+    margin-top: 2px;
+  }
+
+  .experience_body.is_open {
+    padding: 12px;
+  }
+
+  .experience_stack {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  .experience_points {
+    font-size: 11px;
+    padding-left: 14px;
+  }
+
+  .experience_points li {
+    line-height: 1.6;
+    margin-bottom: 8px;
   }
 
   .experience_timeline::before {

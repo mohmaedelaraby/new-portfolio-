@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HomePage.css";
 import { ReactTyped } from "react-typed";
 import { Mail, MapPin, Phone } from "lucide-react";
@@ -49,6 +49,7 @@ const contactItems = [
 function HomePage() {
   const right = `{" `;
   const left = ` "}`;
+  const [aboutExpanded, setAboutExpanded] = useState(false);
   return (
     <div className="homepage">
       <div className="homepage_container">
@@ -77,7 +78,7 @@ function HomePage() {
             </div>
             <div className="profile_copy">
               <h2 className="profile_title">About me</h2>
-              <p className="profile_text">
+              <p className={`profile_text${aboutExpanded ? "" : " profile_text_clamped"}`}>
                 Senior Frontend Engineer with 4+ years of experience building
                 scalable web applications across supply chain, security &
                 surveillance, and customer engagement platforms. Experienced in
@@ -87,6 +88,12 @@ function HomePage() {
                 initiatives, improving operational efficiency, and collaborating
                 across cross-functional engineering teams.
               </p>
+              <button
+                className="read_more_btn"
+                onClick={() => setAboutExpanded(p => !p)}
+              >
+                {aboutExpanded ? "Show less" : "Read more"}
+              </button>
               <a
                 className="resume_button"
                 href="/Mohamed_Elaraby_Resume.pdf"
