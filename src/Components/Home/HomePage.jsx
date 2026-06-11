@@ -79,7 +79,7 @@ function HomePage() {
             <div className="profile_copy">
               <h2 className="profile_title">About me</h2>
               <p className={`profile_text${aboutExpanded ? "" : " profile_text_clamped"}`}>
-                Senior Frontend Engineer with 4+ years of experience building
+                Software Frontend Engineer with 4+ years of experience building
                 scalable web applications across supply chain, security &
                 surveillance, and customer engagement platforms. Experienced in
                 React.js, Angular, Vue.js, and modern frontend architecture, with a
